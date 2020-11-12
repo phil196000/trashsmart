@@ -1,0 +1,154 @@
+#services{
+     /* height: 100vh; */
+          width: 100%;
+           /* background-color: yellow; */
+          padding: 50px 0px;
+          position: relative;
+
+}
+
+.service-header-part-1-text-exp{
+    width: 250px;
+    padding:0px 40px;
+}
+.service-header-part-1{
+    width: 50%;
+    background-color: black;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    flex-direction: column;
+    
+    
+}
+.service-header-part-2{
+    width: 50%;
+    background-color: #8CC542;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    flex-direction: column;
+}
+.service-header-part-3{
+    background: #C4C4C4;
+    width: 40%;
+    height: 20%;
+    position: absolute;
+    display: flex;
+
+    padding: 5% 5%;
+
+    flex-direction: row;
+
+    top:    13% ;
+    left: 47%;
+
+}
+.service-header-part-1-service{
+    font-weight: bold;
+font-size: 450%;
+
+
+}
+.services-main-1{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+
+}
+.services-main-2{
+    display: flex;
+    flex-direction: row;
+
+    width: 100vw;
+
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 50px 0px;
+
+}
+.services-list-item{
+   
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 45%;
+
+  
+}
+@media screen and (max-width: 560px) {
+    .service-header-part-1{
+        width: 90%;
+        background-color: black;
+        height: 50vh;
+        padding-left: 5%;
+    padding-right: 5%;
+    justify-content: space-around;
+    }
+    .service-header-part-2{
+        width: 100%;
+        background-color: #8CC542;
+        
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        flex-direction: column;
+    }
+    .service-header-part-3{
+        background: #C4C4C4;
+        width: 90%;
+        height: 30vh;
+        position: absolute;
+        top: 30%;
+        display: flex;
+        left: 0%;
+
+        flex-direction: row;
+    
+    }
+    .service-header-part-1-text-exp{
+        padding:0px 40px;
+    }
+    .service-header-part-1-service{
+        font-weight: bold;
+    font-size: 300%;
+    
+    
+    }
+    #services{
+        /* height: 150vh; */
+             width: 100%;
+
+             padding: 50px 0px;
+             position: relative;
+   
+   }
+   .services-main-1{
+    height: 100vh;
+}
+.services-list-item{
+   
+        display: flex;
+        align-items: center;
+        margin-bottom: 10;
+    justify-content: space-evenly;
+        width:100%;
+        /* background-color: blue; */
+      
+}
+.services-main-2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+
+}

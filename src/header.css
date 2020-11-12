@@ -1,0 +1,125 @@
+.header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./assets//headerBackground.png');
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: overlay;
+    border-bottom-left-radius: 20%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    
+    /* background-repeat: no-repeat; */
+
+}
+
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-around;
+    list-style: none;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav-item:hover{
+    animation: nav-item-pointed 500ms ease-in-out forwards;
+}
+.nav-menu{
+    display: none;
+}
+
+@keyframes nav-item-pointed{
+    100%{
+        /* border-bottom: 2px solid #fff; */
+        transform: scale(1.2);
+    }
+}
+
+.message-container{
+    position: absolute;
+    width: 676px;
+    height: 236px;
+    left: 187px;
+    top: 217px;
+    color: #fff;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 78px;
+    
+}
+@media screen and (max-width: 560px) {
+    .nav-container {
+      display: none;
+    }
+    .close{
+        animation: menu-scale-close 500ms forwards;
+    }
+    @keyframes menu-scale-close {
+        from{
+            transform: scale(1);
+        }
+        to{
+            transform: scale(0);
+        }
+    }
+    .nav-item{
+        padding: 10px 15px;
+
+    }
+    .nav-item:hover{
+        animation: nav-item-pointed 500ms ease-in-out forwards;
+    }
+    
+    @keyframes nav-item-pointed{
+        100%{
+            border:1px solid  #fff;
+            color: #116939;
+        }
+    }
+    .active{
+        display: flex;
+        flex-direction: column;
+        background-color:#116939 ;
+        position: absolute;
+        z-index: 9999;
+        top: 60px;
+        right: 20px;
+    
+        animation: menu-scale 500ms forwards;
+
+    }
+    @keyframes menu-scale {
+        from{
+            transform: scale(0);
+        }
+        to{
+            transform: scale(1);
+        }
+    }
+    .nav-menu{
+        display: block;
+        cursor: pointer;
+    }
+    .message-container{
+        position: absolute;
+    left: 10%;
+    top: 150px;
+        width: 65%;
+        align-self: center;
+        justify-self: center;
+
+        padding: 10px;
+        font-weight: bold;
+        font-size: 170%;
+        line-height: 130%;
+        color: #fff;
+    }
+   
+  }

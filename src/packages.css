@@ -1,0 +1,22 @@
+#packages{
+    /* height: 100vh; */
+    width: 100%;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.packages-intro{
+    font-size: 150%;
+    padding:60px 49px;
+}
+@media screen and (max-width: 560px) {
+.packages-intro{
+    font-size: 100%;
+    padding: 30px 10px;
+
+
+}
+}
